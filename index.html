@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>GifTastic</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+
+  <style>
+    body {
+      background-image: url("assets/images/red-background.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      font-family: 'Times New Roman', Times, serif;
+
+    }
+
+    button {
+      background-color: rgba(233, 78, 78, 0.199);
+      color: white;
+      margin: 5px;
+      padding: 3px 15px;
+      border-radius: 3px;
+      border-style: ridge;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!--SINGLE CO: TITLE, BUTTONS-->
+  <div class="row">
+
+    <div class="col-12">
+      <div class="jumbotron" style="background-color: rgba(182, 88, 88, 0.329);">
+        <h1 style="font-family: 'Kaushan Script', cursive; font-size: 500%;">Animal Gifs</h1>
+      </div>
+      <div id="buttons"></div>
+    </div>
+
+  </div>
+
+  <!--SPLIT COL: FORM, DISPLAY-->
+  <div class="row">
+
+    <div class="col-md-9 col-12">
+      <br>
+      <div class="col-md-12 col-12" id="gifs-appear-here"></div>
+    </div>
+
+    <div class="col-md-3 col-12">
+      <form id="animal-form">
+        <label for="animal-input">Add an Animal</label><br>
+        <input type="text" id="animal-input"><br>
+
+        <!--ADD ANIMAL INPUT-->
+        <input id="add-animal" type="submit" value="Submit">
+      </form>
+    </div>
+
+  </div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
